@@ -81,6 +81,50 @@ body {
     width: 100%;
 }
 
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    top: 100%;
+    right: auto;
+    background: rgba(26, 35, 126, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-item.dropdown2:hover .dropdown-menu2 {
+    display: block;
+}
+
+.dropdown-menu2 {
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    top: 63%;
+    right: 100%;
+    background: rgba(26, 35, 126, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
